@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stdstream.cpp                                      :+:      :+:    :+:   */
+/*   member_attributes_main.cpp                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarrilh <dcarrilh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/29 14:15:19 by dcarrilh          #+#    #+#             */
-/*   Updated: 2023/11/30 14:10:14 by dcarrilh         ###   ########.fr       */
+/*   Created: 2023/11/30 15:34:16 by dcarrilh          #+#    #+#             */
+/*   Updated: 2023/11/30 15:41:42 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "member_attributes.hpp"
 #include <iostream>
 
 int	main()
 {
-	char input[256];
-
-	std::cout << "Error: Need New Username!" << std::endl;
-
-	std::cout << "New User: ";
-	std::cin >> input;
+	member_attributes	test;
+	test.member = 5;
+	std::cout << "Member: " << test.member << std::endl;
 	
-	std::cout << "User: [" << input << "]" << std::endl;
+	test.function();
+	
 }
