@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   list_main.cpp                                      :+:      :+:    :+:   */
+/*   const_main.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarrilh <dcarrilh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/01 16:29:20 by dcarrilh          #+#    #+#             */
-/*   Updated: 2023/12/04 11:59:52 by dcarrilh         ###   ########.fr       */
+/*   Created: 2023/12/04 11:53:47 by dcarrilh          #+#    #+#             */
+/*   Updated: 2023/12/04 11:56:59 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "list.hpp"
+#include "const.hpp"
 
-int	main(void)
-{
-	Sample	test( 'D', 7, 3.14f );
-	Sample2	test2( 'D', 7, 3.14f );
+int	main(){
+
+	Sample test(3.14f);
+	test.bar();
 	return (0);
 }

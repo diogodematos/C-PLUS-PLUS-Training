@@ -1,20 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   list_main.cpp                                      :+:      :+:    :+:   */
+/*   const.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarrilh <dcarrilh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/01 16:29:20 by dcarrilh          #+#    #+#             */
-/*   Updated: 2023/12/04 11:59:52 by dcarrilh         ###   ########.fr       */
+/*   Created: 2023/12/04 11:42:06 by dcarrilh          #+#    #+#             */
+/*   Updated: 2023/12/04 11:53:21 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "list.hpp"
+#include "const.hpp"
+#include <iostream>
 
-int	main(void)
-{
-	Sample	test( 'D', 7, 3.14f );
-	Sample2	test2( 'D', 7, 3.14f );
-	return (0);
+Sample::Sample(const float f) : pd(f), i(42){
+
+	std::cout << "Constructor Called" << std::endl;
+	std::cout << "this->pd: " << this->pd << " and this->i: " << std::endl;
+	return ;
 }
+
+Sample::~Sample(void){
+	
+	std::cout << "Destructor Called" << std::endl;
+	return ;
+}
+
+void Sample::bar(void) const{
+	
+	std::cout << "Vamos" << std::endl;
+	return ;
+}
+

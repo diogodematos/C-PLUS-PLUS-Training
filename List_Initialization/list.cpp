@@ -6,7 +6,7 @@
 /*   By: dcarrilh <dcarrilh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 16:19:11 by dcarrilh          #+#    #+#             */
-/*   Updated: 2023/12/01 17:36:07 by dcarrilh         ###   ########.fr       */
+/*   Updated: 2023/12/04 11:58:57 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,21 @@ Sample::Sample(char i, int j, float k){
 }
 
 Sample::~Sample(void){
+	
+	std::cout << "Destructor Called" << std::endl;
+	return ;
+}
+
+Sample2::Sample2(char i, int j, float k) : a(i), b(j), c(k){
+	
+	std::cout << "Constructor Called" << std::endl;
+	std::cout << "this->a: " << this->a << std::endl;
+	std::cout << "this->b: " << this->b << std::endl;
+	std::cout << "this->c: " << this->c << std::endl;
+	return ;
+}
+
+Sample2::~Sample2(void){
 	
 	std::cout << "Destructor Called" << std::endl;
 	return ;

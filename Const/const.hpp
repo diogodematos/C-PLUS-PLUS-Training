@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   list_main.cpp                                      :+:      :+:    :+:   */
+/*   const.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarrilh <dcarrilh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/01 16:29:20 by dcarrilh          #+#    #+#             */
-/*   Updated: 2023/12/04 11:59:52 by dcarrilh         ###   ########.fr       */
+/*   Created: 2023/12/04 11:38:50 by dcarrilh          #+#    #+#             */
+/*   Updated: 2023/12/04 11:47:15 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "list.hpp"
+#ifndef	CONST_H
+# define CONST_H
 
-int	main(void)
+class Sample
 {
-	Sample	test( 'D', 7, 3.14f );
-	Sample2	test2( 'D', 7, 3.14f );
-	return (0);
-}
+public:
+
+	const float	pd;
+	int	i;
+	Sample(const float f);
+	~Sample(void);
+
+	void bar(void) const;
+};
+
+#endif
